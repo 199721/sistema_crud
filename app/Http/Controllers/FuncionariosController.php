@@ -15,6 +15,7 @@ class FuncionariosController extends Controller
     public function index()
     {
         //
+        return view('funcionarios.index');
     }
 
     /**
@@ -25,6 +26,7 @@ class FuncionariosController extends Controller
     public function create()
     {
         //
+        return view('funcionarios.create');
     }
 
     /**
