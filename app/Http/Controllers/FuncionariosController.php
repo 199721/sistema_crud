@@ -37,7 +37,13 @@ class FuncionariosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //$dadosFuncionarios=request()->all();
+
+        $dadosFuncionarios=request()->except('_token');
+
+        Funcionarios::insert($dadosFuncionarios);
+        
+        return response()->json($dadosFuncionarios);
     }
 
     /**

@@ -1,1 +1,1 @@
-Secao para editar funcionario
+Seção para editar funcionario

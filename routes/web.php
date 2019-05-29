@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\FuncionariosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/funcionarios', function(){
-        return view('funcionarios.index');
+//Route::get('/funcionarios', 'FuncionariosController@index');
+//Route::get('/funcionarios/create', 'FuncionariosController@create');
 
-});
-
-Route::get('/funcionarios/create', function(){
-        return view('funcionarios.create');
-
-});
+Route::resource('funcionarios', 'FuncionariosController');
